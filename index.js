@@ -30,6 +30,7 @@ translateField.onkeypress = function(e){
       },
       timeout: 6000
     });
+    translateField.value = " "
   }
   // translateField.onclick(function() {
   //   translateField.value = " "
