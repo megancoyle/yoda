@@ -21,7 +21,6 @@ translateField.onkeypress = function(e){
       url: "https://yoda.p.mashape.com/yoda?sentence=" + userInput,
       success: function(response) {
         translation.innerHTML = response;
-        console.log(timer)
       },
       headers: {
         "X-Mashape-Key": "OGPgEThqxtmshCpTDZyOUBndDjLLp1Lm0qcjsnpxxdQawmnaj7"
@@ -32,4 +31,7 @@ translateField.onkeypress = function(e){
       timeout: 6000
     });
   }
+  // translateField.onclick(function() {
+  //   translateField.value = " "
+  // })
 }
