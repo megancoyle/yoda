@@ -1,21 +1,24 @@
 var translateField  = document.getElementById("translate");
 var translation = document.getElementById("yoda");
+var yodaForm = document.getElementById("yoda-text");
 
 var timer = null;
-  // after five seconds, initiate awkward silence
-timer = setTimeout(function(){
-  translation.innerHTML = "...";
-}, 5000);
 
-translateField.onkeypress = function(e){
+translateField.onkeypress = function(){
+  // after three seconds, initiate awkward silence
+  timer = setTimeout(function(){
+    translation.innerHTML = "...";
+  }, 3000);
+}
 
-  // when user presses enter
-  if (e.keyCode == 13) {
+yodaForm.onsubmit = function(e){
+  e.preventDefault();
     // clear timeout
     if (timer) {
       clearTimeout(timer);
       timer = null;
     }
+    translation.innerHTML = "Yoda is searching for answers...";
     var userInput = document.getElementById("translate").value;
     $.ajax({
       url: "https://yoda.p.mashape.com/yoda?sentence=" + userInput,
@@ -31,8 +34,4 @@ translateField.onkeypress = function(e){
       timeout: 6000
     });
     translateField.value = " "
-  }
-  // translateField.onclick(function() {
-  //   translateField.value = " "
-  // })
 }
