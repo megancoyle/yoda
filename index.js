@@ -4,12 +4,12 @@ var yodaForm = document.getElementById("yoda-text");
 
 var timer = null;
 
-translateField.onkeypress = function(){
+// translateField.onkeydown = function(){
   // after three seconds, initiate awkward silence
   timer = setTimeout(function(){
     translation.innerHTML = "...";
   }, 3000);
-}
+// }
 
 yodaForm.onsubmit = function(e){
   e.preventDefault();
