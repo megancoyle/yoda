@@ -3,3 +3,8 @@ img {
   margin: 0 auto;
   display: block;
 }
+.container {
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: center;
+}
