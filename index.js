@@ -29,7 +29,7 @@ yodaForm.onsubmit = function(e){
         "X-Mashape-Key": "OGPgEThqxtmshCpTDZyOUBndDjLLp1Lm0qcjsnpxxdQawmnaj7"
       },
       error: function(){
-        translation.innerHTML = translation.innerHTML + "Sorry, but Yoda is out for the day.";
+        translation.innerHTML = "Sorry, but Yoda is out for the day.";
       },
       timeout: 6000
     });
