@@ -8,6 +8,7 @@ var timer = null;
 // translateField.onkeydown = function(){
   // after three seconds, initiate awkward silence
   timer = setTimeout(function(){
+    bubble.className = 'bubble';
     translation.innerHTML = "...";
   }, 3000);
 // }

@@ -2,9 +2,18 @@ body {
   background: #3c3c3b;
 }
 img {
-  max-width: 400px;
+  max-width: 300px;
   margin: 0 auto;
   display: block;
+}
+#chat-bubble {
+  max-width: 300px;
+  height: 198px
+}
+.bubble {
+  background: url('chat-bubble.png');
+  background-size: 100%;
+  margin: 0 auto;
 }
 .container {
   max-width: 500px;
