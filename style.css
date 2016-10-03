@@ -8,7 +8,13 @@ img {
 }
 #chat-bubble {
   max-width: 300px;
-  height: 198px
+  height: 198px;
+  margin-top: 20px;
+}
+#yoda {
+  padding-top: 40px;
+  max-width: 234px;
+  margin: 0 auto;
 }
 .bubble {
   background: url('chat-bubble.png');
