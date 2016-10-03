@@ -1,6 +1,7 @@
 var translateField  = document.getElementById("translate");
 var translation = document.getElementById("yoda");
 var yodaForm = document.getElementById("yoda-text");
+var bubble = document.getElementById("chat-bubble");
 
 var timer = null;
 
