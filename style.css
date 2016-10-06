@@ -1,5 +1,21 @@
+@import 'https://fonts.googleapis.com/css?family=Gochi+Hand';
+@import 'https://fonts.googleapis.com/css?family=Muli';
+
+header {
+  background: #b3b3b3;
+  margin-bottom: 60px;
+}
+h1#logo {
+  font-family: 'Gochi Hand', cursive;
+  margin: 0;
+  display: inline-block;
+  padding: 10px 0;
+  color: #3c3c3b;
+}
 body {
   background: #3c3c3b;
+  margin: 0;
+  font-family: 'Muli', sans-serif;
 }
 img {
   max-width: 300px;
