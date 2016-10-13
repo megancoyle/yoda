@@ -20,7 +20,7 @@ yodaForm.onsubmit = function(e){
       clearTimeout(timer);
       timer = null;
     }
-    translation.innerHTML = "Yoda is searching for answers...";
+    translation.innerHTML = "Searching for answers, Yoda is....";
     var userInput = document.getElementById("translate").value;
     $.ajax({
       url: "https://yoda.p.mashape.com/yoda?sentence=" + userInput,
